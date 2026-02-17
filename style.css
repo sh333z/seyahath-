@@ -112,6 +112,12 @@ body{
 .about-text{
   flex:1;
 }
+.about-text h2 {
+  font-weight: 700;
+  background: linear-gradient(90deg, #19BAED, #34BD6C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .about-text button{
   margin-top:15px;
