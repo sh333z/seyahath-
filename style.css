@@ -144,7 +144,7 @@ body{
 }
 
 .about-images img:not(:first-child) {
-  margin-left: -30px;   /* controls overlap */
+  margin-left: -10px;   /* controls overlap */
 }
 
 .about-images img:nth-child(odd) {
@@ -314,7 +314,7 @@ body{
 }
 
 .about-images img:not(:first-child) {
-  margin-left: -30px;   /* controls overlap */
+  margin-left: -10px;   /* controls overlap */
 }
   .about-images img:nth-child(odd) {
   transform: translateY(-15px);
