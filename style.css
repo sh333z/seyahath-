@@ -288,14 +288,25 @@ body{
   }
 
   .about-images {
-    justify-content: center;
-    margin-top: 20px;
-  }
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
 
-  .about-images img {
-    width: 85px;
-    height: 140px;
-  }
+.about-images img {
+  width: 95px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 4px solid white;   /* stroke */
+}
+  .about-images img:nth-child(odd) {
+  transform: translateY(-15px);
+}
+
+.about-images img:nth-child(even) {
+  transform: translateY(15px);
+}
 
   /* DESTINATION SECTION */
   .dest-grid {
