@@ -228,8 +228,10 @@ body{
 
   /* HERO */
   .hero {
-    height: 75vh;
+    height: 330px;
+    min-height: 330px;
     padding: 0 20px;
+    align-items: center;
   }
 
   .welcome {
