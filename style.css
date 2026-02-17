@@ -201,10 +201,25 @@ body{
   padding:15px;
   font-weight:600;
 }
+.menu-btn {
+  display: none; /* hide on desktop */
+}
+
 
 @media (max-width: 768px) {
 
-  /* NAVBAR - Make it simple like target */
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* NAVBAR */
   .nav-container {
     position: absolute;
     top: 20px;
