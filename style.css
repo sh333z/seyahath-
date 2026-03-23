@@ -156,7 +156,7 @@ body{
 }
 /* WHY */
 .why{
-  background:#0097a7;
+  background:#19baed;
   color:white;
   text-align:center;
   padding:60px 8%;
@@ -302,6 +302,7 @@ body{
   .about-images {
   display: flex;
   align-items: center;
+  margin-bottom: -60px;
 }
 
 .about-images img {
