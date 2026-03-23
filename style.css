@@ -148,11 +148,11 @@ body{
 }
 
 .about-images img:nth-child(odd) {
-  transform: translateY(-15px);
+  transform: translateY(-10px);
 }
 
 .about-images img:nth-child(even) {
-  transform: translateY(15px);
+  transform: translateY(10px);
 }
 /* WHY */
 .why{
