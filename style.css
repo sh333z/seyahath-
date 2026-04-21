@@ -176,15 +176,18 @@ body{
 /* LEFT SIDE */
 .why-boxes {
   display: grid;
-  grid-template-columns: repeat(2, 140px);
-  gap: 20px;
+  grid-template-columns: repeat(2, 200px);
+  gap: 50px;
 }
 
 .why-card {
-  background: #eaf5ef;
+  width: 280px;
+  height: 240px;
   padding: 30px 15px;
   border-radius: 15px;
-  font-weight: 500;
+  font-size: 26px;
+  font-weight: 600;
+  
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
@@ -196,7 +199,7 @@ body{
 
 /* Active card (blue border like your image) */
 .why-card.active {
-  border: 2px solid #19BAED;
+  border: 2px solid #D9ECF1;
   background: #f0fbff;
 }
 
