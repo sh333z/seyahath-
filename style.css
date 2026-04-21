@@ -226,7 +226,8 @@ body{
 
 .why-content h3 {
   font-size: 26px;
-  margin-top: 0px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .why-content p {
