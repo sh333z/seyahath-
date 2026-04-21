@@ -178,6 +178,7 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 260px); /* width */
   gap: 50px; /* gap between boxes */
+  width: 570px;
 }
 
 .why-card {
@@ -199,7 +200,6 @@ body{
 
 /* Active card (blue border like your image) */
 .why-card.active {
-  border: 2px solid #D9ECF1;
   background: #f0fbff;
 }
 
