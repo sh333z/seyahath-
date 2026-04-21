@@ -37,7 +37,7 @@ body{
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 40%;
+  width: 50%;
   padding: 12px 40px;
   border-radius: 50px;
   background: rgba(255,255,255,0.15);
@@ -59,13 +59,13 @@ body{
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 60px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: black;
-  font-weight: 700;
+  font-weight: 650;
   font-size: 14px;
   letter-spacing: 1px;
   transition: 0.3s;
