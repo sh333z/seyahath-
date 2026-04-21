@@ -175,13 +175,13 @@ body{
 /* LEFT SIDE */
 .why-boxes {
   display: grid;
-  grid-template-columns: repeat(2, 260px); /* width */
-  gap: 50px; /* gap between boxes */
+  grid-template-columns: repeat(2, 240px); /* width */
+  gap: 40px; /* gap between boxes */
   width: 570px;
 }
 
 .why-card {
-  height: 220px; /* height */
+  height: 200px; /* height */
   border-radius: 15px; /* keep or adjust from figma */
   
   display: flex;
