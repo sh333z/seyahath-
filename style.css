@@ -198,9 +198,21 @@ body{
   transform: translateY(-5px);
 }
 
-/* Active card (blue border like your image) */
-.why-card.active {
-  background: #f0fbff;
+/* Different colors for each box */
+.why-card:nth-child(1) {
+  background: #eaf3ec; /* light green */
+}
+
+.why-card:nth-child(2) {
+  background: #eef9ff; /* light blue */
+}
+
+.why-card:nth-child(3) {
+  background: #edf3f5; /* light gray-blue */
+}
+
+.why-card:nth-child(4) {
+  background: #eaf3ec; /* same as first */
 }
 
 /* RIGHT SIDE */
