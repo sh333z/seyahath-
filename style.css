@@ -267,57 +267,7 @@ body{
   color: #777;
 }
 
-/* SERVICES */
-.services{
-  padding:80px 8%;
-  text-align:center;
-}
 
-.cards{
-  display:flex;
-  gap:20px;
-  justify-content:center;
-  margin-top:40px;
-  flex-wrap:wrap;
-}
-
-.card{
-  background:white;
-  padding:30px;
-  width:220px;
-  border-radius:15px;
-  box-shadow:0 10px 20px rgba(0,0,0,0.1);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-10px);
-}
-
-/* DESTINATIONS */
-.destinations{
-  padding:60px 8%;
-  text-align:center;
-}
-
-.dest-grid{
-  display:flex;
-  gap:20px;
-  justify-content:center;
-  margin-top:30px;
-}
-
-.dest-card{
-  background:url("images/destination.jpg") center/cover no-repeat;
-  width:250px;
-  height:150px;
-  border-radius:15px;
-  color:white;
-  display:flex;
-  align-items:end;
-  padding:15px;
-  font-weight:600;
-}
 .menu-btn {
   display: none; /* hide on desktop */
 }
