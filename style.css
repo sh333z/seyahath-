@@ -168,9 +168,8 @@ body{
 /* Layout */
 .why-container {
   display: flex;
-  gap: 40px;
-  align-items: center;
-  justify-content: space-between;
+  gap: 60px;
+  align-items: stretch;
 }
 
 /* LEFT SIDE */
@@ -217,20 +216,23 @@ body{
 
 /* RIGHT SIDE */
 .why-content {
+  flex: 1; /* take full available space */
   text-align: left;
-  max-width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
 }
 
 .why-content h3 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 26px;
+  margin-bottom: 15px;
 }
 
 .why-content p {
-  font-size: 14px;
+  font-size: 15px;
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   line-height: 1.6;
 }
 
