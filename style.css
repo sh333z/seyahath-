@@ -176,21 +176,21 @@ body{
 /* LEFT SIDE */
 .why-boxes {
   display: grid;
-  grid-template-columns: repeat(2, 200px);
-  gap: 50px;
+  grid-template-columns: repeat(2, 260px); /* width */
+  gap: 50px; /* gap between boxes */
 }
 
 .why-card {
-  width: 280px;
-  height: 240px;
-  padding: 30px 15px;
-  border-radius: 15px;
-  font-size: 26px;
-  font-weight: 600;
+  height: 220px; /* height */
+  border-radius: 15px; /* keep or adjust from figma */
   
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  cursor: pointer;
-  transition: 0.3s;
+
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .why-card:hover {
