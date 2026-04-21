@@ -48,13 +48,6 @@ body{
   align-items: center;
 }
 
-/* Logo */
-.logo {
-  font-weight: 600;
-  font-size: 18px;
-  color: #00e676;
-}
-
 /* Nav links */
 .nav-links {
   list-style: none;
@@ -99,6 +92,35 @@ body{
   opacity: 0.9;
 }
 
+/* Initial state */
+.welcome,
+.hero h1,
+.tagline {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+
+/* Delay each line */
+.welcome {
+  animation-delay: 0.3s;
+}
+
+.hero h1 {
+  animation-delay: 0.6s;
+}
+
+.tagline {
+  animation-delay: 0.9s;
+}
+
+/* Animation keyframes */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* ABOUT */
 .about{
   display:flex;
