@@ -44,17 +44,22 @@ body{
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 55%;
-  padding: 12px 40px;
+
+  width: 778px;      /* exact */
+  height: 61px;      /* exact */
   border-radius: 20px;
-  background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.25);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+  padding: 0 40px;   /* 🔥 space inside (text gap from edges) */
+
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.3);
+
   display: flex;
-  justify-content: center;
   align-items: center;
-  z-index: 3;
+  justify-content: center; /* center nav items */
+
+  z-index: 10;
 }
 
 /* Nav links */
