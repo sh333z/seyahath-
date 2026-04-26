@@ -52,9 +52,9 @@ body{
   padding: 0 40px;   /* 🔥 space inside (text gap from edges) */
 
   background: rgba(255,255,255,0.2);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255,255,255,0.3);
-
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+ 
   display: flex;
   align-items: center;
   justify-content: center; /* center nav items */
@@ -64,6 +64,7 @@ body{
 
 /* Nav links */
 .nav-links {
+  list-style: none;
   display: flex;
   gap: 145px;
 }
