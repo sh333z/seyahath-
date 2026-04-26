@@ -64,9 +64,8 @@ body{
 
 /* Nav links */
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 60px;
+  gap: 145px;
 }
 
 .nav-links a {
