@@ -327,13 +327,15 @@ body{
   display: flex;
   gap: 25px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behaviour: smooth;
 }
 
 /* Card */
 .service-card {
   position: relative;
-  width: 220px;
+  min-width: 220px;
   height: 300px;
   border-radius: 20px;
   overflow: hidden;
