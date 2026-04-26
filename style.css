@@ -367,7 +367,7 @@ body{
   padding: 10px 14px;
 
   background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(1px);
   border: 1px solid rgba(255,255,255,0.14);
 }
 
@@ -391,10 +391,10 @@ body{
   height: 31px;
 
   border-radius: 20px;
-  border: 1px solid rgba(255,255,255,0.4);
+  border: none;
 
   background: rgba(255,255,255,0.16);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(3px);
 
   color: white;
   font-size: 12px;
