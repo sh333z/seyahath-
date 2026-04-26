@@ -152,10 +152,15 @@ body{
   flex:1;
 }
 .about-text h2 {
-  font-weight: 700;
-  background: linear-gradient(90deg, #19BAED, #34BD6C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  font-weight: 700;   /* bold */
+  margin-bottom: 30px; /* gap to paragraph */
+}
+
+.about-text p {
+  font-size: 20px;
+  font-weight: 700;   /* bold */
+  line-height: 1.5;   /* keeps it readable */
 }
 
 .about-text button{
@@ -187,11 +192,11 @@ body{
 }
 
 .about-images img:nth-child(odd) {
-  transform: translateY(-25px);
+  transform: translateY(-15px);
 }
 
 .about-images img:nth-child(even) {
-  transform: translateY(25px);
+  transform: translateY(15px);
 }
 /* WHY */
 .why {
