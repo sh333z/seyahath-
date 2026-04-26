@@ -326,19 +326,18 @@ body{
 /* Container */
 .service-container {
   display: flex;
-  gap: 25px;
-  justify-content: center;
-  flex-wrap: nowrap;
+  gap: 26px;
   overflow-x: auto;
   scroll-behavior: smooth;
+  padding: 0 20;
 }
 
 /* Card */
 .service-card {
   position: relative;
-  min-width: 220px;
-  height: 300px;
-  border-radius: 30px;
+  min-width: 285px;
+  height: 390px;
+  border-radius: 40px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -354,47 +353,54 @@ body{
 .service-overlay {
   position: absolute;
   bottom: 15px;
-  left: 15px;
-  right: 15px;
+  left: 50%;
+  transform: translateX(-50%);
 
-  padding: 12px 15px;
-  border-radius: 30px;
+  width: 261px;
+  height: 61px;
+  border-radius: 40px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
+  padding: 10px 14px;
+
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(14px);
   border: 1px solid rgba(255,255,255,0.3);
 }
 
 /* Text */
 .service-overlay h4 {
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 600;
   margin-bottom: 2px;
   color: white;
 }
 
 .service-overlay p {
-  font-size: 12px;
-  opacity: 0.8;
+  font-size: 8px;
+  font-weight: 500;
   color: white;
+  opacity: 0.85;
 }
 /* Button */
 .service-overlay button {
-  padding: 6px 14px;
+  width: 82px;
+  height: 31px;
+
   border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.4);
 
   background: rgba(255,255,255,0.25);
-  border: 1px solid rgba(255,255,255,0.4);
+  backdrop-filter: blur(8px);
 
   color: white;
   font-size: 12px;
   cursor: pointer;
 
-  backdrop-filter: blur(8px);
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .service-overlay button:hover {
