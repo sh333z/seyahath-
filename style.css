@@ -174,24 +174,24 @@ body{
 }
 
 .about-images img {
-  width: 95px;
-  height: 160px;
+  width: 150px;
+  height: 249px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 14px;
   border: 4px solid white;
   transition: transform 0.3s ease;
 }
 
 .about-images img:not(:first-child) {
-  margin-left: -10px;   /* controls overlap */
+  margin-left: -25px;   /* controls overlap */
 }
 
 .about-images img:nth-child(odd) {
-  transform: translateY(-10px);
+  transform: translateY(-25px);
 }
 
 .about-images img:nth-child(even) {
-  transform: translateY(10px);
+  transform: translateY(25px);
 }
 /* WHY */
 .why {
@@ -200,7 +200,7 @@ body{
 }
 
 .why-title {
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 600;
   margin-bottom: 80px;
 }
