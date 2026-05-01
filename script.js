@@ -6,28 +6,42 @@ menuBtn.addEventListener('click', () => {
 });
 
 const track = document.querySelector(".carousel-track");
-const cards = document.querySelectorAll(".card");
+let cards = document.querySelectorAll(".card");
 
-let index = 2; // center starts here
+let index = 2;
+
+/* CLONE for infinite loop */
+track.appendChild(cards[0].cloneNode(true));
+track.appendChild(cards[1].cloneNode(true));
+track.prepend(cards[cards.length - 1].cloneNode(true));
+
+cards = document.querySelectorAll(".card");
 
 function updateCarousel() {
   cards.forEach(card => card.classList.remove("active"));
 
   cards[index].classList.add("active");
 
-  const offset = cards[index].offsetLeft - (window.innerWidth / 2 - cards[index].offsetWidth / 2);
-  track.style.transform = `translateX(-${offset}px)`;
+  const cardWidth = cards[index].offsetWidth + 30;
+
+  track.style.transform = `translateX(calc(50% - ${cardWidth * index}px))`;
 }
 
-/* Auto slide */
+/* AUTO SLIDE */
 setInterval(() => {
   index++;
 
-  if (index >= cards.length) {
-    index = 0;
+  if (index >= cards.length - 1) {
+    index = 1;
+    track.style.transition = "none";
+    updateCarousel();
+
+    setTimeout(() => {
+      track.style.transition = "0.5s ease";
+    }, 50);
   }
 
   updateCarousel();
-}, 2500);
+}, 3000);
 
 updateCarousel();
