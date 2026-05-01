@@ -430,34 +430,38 @@ body{
 
 /* Carousel container */
 .carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
-  position: relative;
 }
 
-/* Track */
 .carousel-track {
   display: flex;
   gap: 30px;
-  transition: transform 0.5s ease;
   align-items: center;
+  transition: transform 0.5s ease;
 }
 
-/* Default cards (side ones) */
+/* SIDE CARDS */
 .card {
   width: 377px;
   height: 243px;
   border-radius: 10px;
-  overflow: hidden;
   flex-shrink: 0;
-  position: relative;
+  opacity: 0.6;
+  transform: scale(0.9);
   transition: all 0.5s ease;
 }
 
-/* Center card (ACTIVE) */
+/* CENTER CARD */
 .card.active {
   width: 410px;
   height: 290px;
-  transform: scale(1.05);
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* Image */
