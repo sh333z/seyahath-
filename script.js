@@ -8,12 +8,14 @@ menuBtn.addEventListener('click', () => {
 const track = document.querySelector(".carousel-track");
 let cards = document.querySelectorAll(".card");
 
-let index = 2;
+const visibleCards = 3;
+let index = 3;
 
-/* CLONE for infinite loop */
-track.appendChild(cards[0].cloneNode(true));
-track.appendChild(cards[1].cloneNode(true));
-track.prepend(cards[cards.length - 1].cloneNode(true));
+/* CLONE */
+for (let i = 0; i < visibleCards; i++) {
+  track.appendChild(cards[i].cloneNode(true));
+  track.prepend(cards[cards.length - 1 - i].cloneNode(true));
+}
 
 cards = document.querySelectorAll(".card");
 
@@ -36,8 +38,8 @@ function updateCarousel() {
 setInterval(() => {
   index++;
 
-  if (index >= cards.length - 1) {
-    index = 1;
+  if (index >= cards.length - visibleCards) {
+    index = visibleCards;
     track.style.transition = "none";
     updateCarousel();
 
