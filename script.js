@@ -40,19 +40,23 @@ setInterval(() => {
   track.style.transform = `translateX(-${cardWidth * index}px)`;
 
   /* RESET LOOP */
-  if (index >= cards.length - visibleCards) {
-    setTimeout(() => {
-      track.style.transition = "none";
+ if (index >= cards.length - visibleCards) {
+  setTimeout(() => {
 
-      index = index - cards.length + (visibleCards * 2);
+    track.style.transition = "none";
 
-      track.style.transform = `translateX(-${cardWidth * index}px)`;
+    index = index - cards.length + (visibleCards * 2);
 
-      requestAnimationFrame(() => {
-        track.style.transition = "transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)";
-      });
+    track.style.transform = `translateX(-${cardWidth * index}px)`;
 
-    }, 600);
-  }
+    // 🔥 FORCE browser to apply instantly (important for Chrome)
+    track.offsetHeight;
+
+    requestAnimationFrame(() => {
+      track.style.transition = "transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)";
+    });
+
+  }, 600);
+}
 
 }, 3500);
