@@ -1,3 +1,4 @@
+// MENU TOGGLE (keep yours)
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
@@ -5,41 +6,47 @@ menuBtn.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
+
+// =======================
+// CAROUSEL
+// =======================
+
 const track = document.querySelector(".carousel-track");
 let cards = document.querySelectorAll(".card");
 
-const visibleCards = 3;
-let index = 3;
+const visibleCards = 3; // number of visible cards
+let index = visibleCards;
 
-/* CLONE */
+// CLONE (for infinite loop)
 for (let i = 0; i < visibleCards; i++) {
   track.appendChild(cards[i].cloneNode(true));
   track.prepend(cards[cards.length - 1 - i].cloneNode(true));
 }
 
+// reselect after cloning
 cards = document.querySelectorAll(".card");
 
+
+// UPDATE POSITION
 function updateCarousel() {
   cards.forEach(card => card.classList.remove("active"));
   cards[index].classList.add("active");
 
-  const container = document.querySelector(".carousel");
-  const containerCenter = container.offsetWidth / 2;
+  const cardWidth = 430; // card width (400) + gap (30)
+  const centerOffset = (window.innerWidth / 2) - (cardWidth / 2);
 
-  const card = cards[index];
-  const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-
-  const move = containerCenter - cardCenter;
-
-  track.style.transform = `translateX(${move}px)`;
+  track.style.transform = `translateX(${centerOffset - (index * cardWidth)}px)`;
 }
 
-/* AUTO SLIDE */
+
+// AUTO SLIDE
 setInterval(() => {
   index++;
 
+  // reset loop
   if (index >= cards.length - visibleCards) {
     index = visibleCards;
+
     track.style.transition = "none";
     updateCarousel();
 
@@ -51,4 +58,10 @@ setInterval(() => {
   updateCarousel();
 }, 3000);
 
+
+// INITIAL LOAD
 updateCarousel();
+
+
+// OPTIONAL: fix on resize
+window.addEventListener("resize", updateCarousel);
