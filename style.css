@@ -418,75 +418,63 @@ body{
   color: black;
 }
 
-/* SECTION */
-.destinations {
+.dream {
   padding: 80px 8%;
   text-align: center;
 }
 
-.dest-title {
-  font-size: 36px;
-  font-weight: 700;
+.dream-title {
+  font-size: 32px;
   margin-bottom: 40px;
 }
 
-/* SLIDER */
-.dest-slider {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 20px;
-}
-
-/* Hide scrollbar */
-.dest-slider::-webkit-scrollbar {
-  display: none;
-}
-
-/* CARD */
-.dest-card {
-  min-width: 280px;
-  height: 180px;
-  border-radius: 16px;
+/* Carousel container */
+.carousel {
   overflow: hidden;
   position: relative;
-  flex-shrink: 0;
 }
 
-/* IMAGE */
-.dest-card img {
+/* Track */
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+  align-items: center;
+}
+
+/* Default cards (side ones) */
+.card {
+  width: 377px;
+  height: 243px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+/* Center card (ACTIVE) */
+.card.active {
+  width: 410px;
+  height: 290px;
+  transform: scale(1.05);
+}
+
+/* Image */
+.card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* TITLE ON IMAGE */
-.dest-card h3 {
+/* Title */
+.card h3 {
   position: absolute;
-  top: 10px;
-  left: 15px;
+  top: 15px;
+  left: 20px;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
-}
-
-/* DOTS */
-.dots {
-  margin-top: 15px;
-}
-
-.dots span {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: #ccc;
-  border-radius: 50%;
-  margin: 0 5px;
-}
-
-.dots .active {
-  background: #19BAED;
 }
   
 
