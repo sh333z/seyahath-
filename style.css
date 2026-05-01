@@ -436,6 +436,7 @@ body{
   display: flex;
   justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 
 .carousel-track {
