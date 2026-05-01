@@ -450,7 +450,7 @@ body{
 /* SIDE CARDS */
 .card {
   position: relative;
-  width: 377px;
+  width: 400px;
   height: 260px; /* SAME for all cards */
   border-radius: 20px;
   flex-shrink: 0;
@@ -464,7 +464,7 @@ body{
 /* CENTER CARD */
 .card.active {
   opacity: 1;
-  transform: scale(1); /* ONLY scale, no size change */
+  transform: scale(1.1); /* ONLY scale, no size change */
   z-index: 2;
 }
 
