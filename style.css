@@ -434,14 +434,15 @@ body{
   width: 1200px;
   margin: auto;
   overflow: hidden;
+  position: relative;
 }
 
 .carousel-track {
   display: flex;
   gap: 30px;
-  width: max-content;
-
-  animation: scrollLoop 25s linear infinite;
+  will-change: transform;
+  transform: translateZ(0);
+  transition: transform 0.5s ease;
 }
 
 /* CARD */
@@ -452,6 +453,8 @@ body{
   flex-shrink: 0;
   overflow: hidden;
   position: relative;
+  backface-visibility: hidden;
+  transform: translate3d(0,0,0)
 }
 
 /* IMAGE */
@@ -469,16 +472,6 @@ body{
   color: white;
   font-size: 18px;
   font-weight: 600;
-}
-
-/* 🔥 ANIMATION */
-@keyframes scrollLoop {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
 }
   
 
