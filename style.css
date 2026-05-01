@@ -451,21 +451,20 @@ body{
 .card {
   position: relative;
   width: 377px;
-  height: 243px;
+  height: 260px; /* SAME for all cards */
   border-radius: 20px;
   flex-shrink: 0;
-  opacity: 0.6;
+  overflow: hidden;
+
+  opacity: 0.7;
   transform: scale(0.9);
   transition: all 0.5s ease;
-  overflow: hidden;
 }
 
 /* CENTER CARD */
 .card.active {
-  width: 420px;
-  height: 290px;
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1); /* ONLY scale, no size change */
   z-index: 2;
 }
 
