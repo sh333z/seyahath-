@@ -481,7 +481,7 @@ body{
 .test-title {
   font-size: 36px;
   font-weight: 600;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 /* Container */
@@ -495,7 +495,7 @@ body{
 .test-card {
   width: 376px;
   height: 330px;
-  background: #f5f6fb;
+  background: #e7e9ef;
   border-radius: 0px;
   padding: 60px 25px 25px;
   position: relative;
