@@ -41,16 +41,20 @@ setInterval(() => {
 
   /* RESET LOOP */
   if (index >= cards.length - visibleCards) {
-    setTimeout(() => {
-      track.style.transition = "none";
-      index = visibleCards;
-      track.style.transform = `translateX(-${cardWidth * index}px)`;
+  setTimeout(() => {
+    track.style.transition = "none";
 
-      requestAnimationFrame(() => {
-        track.style.transition = "transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)";
-      });
+    index = index - cards.length + (visibleCards * 2);
 
-    }, 600); // match duration
+    track.style.transform = `translateX(-${cardWidth * index}px)`;
+
+    requestAnimationFrame(() => {
+      track.style.transition = "transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)";
+    });
+
+  }, 600);
+}
+  // match duration
   }
 
 }, 3500);
