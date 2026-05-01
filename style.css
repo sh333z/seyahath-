@@ -418,6 +418,77 @@ body{
   color: black;
 }
 
+/* SECTION */
+.destinations {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.dest-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* SLIDER */
+.dest-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+/* Hide scrollbar */
+.dest-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* CARD */
+.dest-card {
+  min-width: 280px;
+  height: 180px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* IMAGE */
+.dest-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TITLE ON IMAGE */
+.dest-card h3 {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* DOTS */
+.dots {
+  margin-top: 15px;
+}
+
+.dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.dots .active {
+  background: #19BAED;
+}
+
 /* Hover Effect */
 .service-card:hover img {
   transform: scale(1.1);
