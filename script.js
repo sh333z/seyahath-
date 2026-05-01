@@ -14,54 +14,37 @@ menuBtn.addEventListener('click', () => {
 const track = document.querySelector(".carousel-track");
 let cards = document.querySelectorAll(".card");
 
-const visibleCards = 3; // number of visible cards
+const cardWidth = 410; // 380 + 30 gap
+const visibleCards = 3;
 let index = visibleCards;
 
-// CLONE (for infinite loop)
+/* CLONE */
 for (let i = 0; i < visibleCards; i++) {
-  track.appendChild(cards[i].cloneNode(true));
-  track.prepend(cards[cards.length - 1 - i].cloneNode(true));
+  const firstClone = cards[i].cloneNode(true);
+  const lastClone = cards[cards.length - 1 - i].cloneNode(true);
+
+  track.appendChild(firstClone);
+  track.prepend(lastClone);
 }
 
-// reselect after cloning
 cards = document.querySelectorAll(".card");
 
+/* INITIAL POSITION */
+track.style.transform = `translateX(-${cardWidth * index}px)`;
 
-// UPDATE POSITION
-function updateCarousel() {
-  cards.forEach(card => card.classList.remove("active"));
-  cards[index].classList.add("active");
-
-  const cardWidth = 430; // card width (400) + gap (30)
-  const centerOffset = (window.innerWidth / 2) - (cardWidth / 2);
-
-  track.style.transform = `translateX(${centerOffset - (index * cardWidth)}px)`;
-}
-
-
-// AUTO SLIDE
+/* AUTO SLIDE */
 setInterval(() => {
   index++;
+  track.style.transition = "0.5s ease";
+  track.style.transform = `translateX(-${cardWidth * index}px)`;
 
-  // reset loop
+  /* RESET LOOP */
   if (index >= cards.length - visibleCards) {
-    index = visibleCards;
-
-    track.style.transition = "none";
-    updateCarousel();
-
     setTimeout(() => {
-      track.style.transition = "0.5s ease";
-    }, 50);
+      track.style.transition = "none";
+      index = visibleCards;
+      track.style.transform = `translateX(-${cardWidth * index}px)`;
+    }, 500);
   }
 
-  updateCarousel();
 }, 3000);
-
-
-// INITIAL LOAD
-updateCarousel();
-
-
-// OPTIONAL: fix on resize
-window.addEventListener("resize", updateCarousel);
