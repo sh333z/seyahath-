@@ -35,7 +35,7 @@ track.style.transform = `translateX(-${cardWidth * index}px)`;
 /* AUTO SLIDE */
 setInterval(() => {
   index++;
-  track.style.transition = "0.5s ease";
+  track.style.transition = "transform 0.5s ease";
   track.style.transform = `translateX(-${cardWidth * index}px)`;
 
   /* RESET LOOP */
@@ -44,6 +44,10 @@ setInterval(() => {
       track.style.transition = "none";
       index = visibleCards;
       track.style.transform = `translateX(-${cardWidth * index}px)`;
+
+      requestAnimationFrame(() =>{
+        track.style.transition = "transform 0.5 ease";
+      });  
     }, 500);
   }
 
