@@ -35,7 +35,8 @@ track.style.transform = `translateX(-${cardWidth * index}px)`;
 /* AUTO SLIDE */
 setInterval(() => {
   index++;
-  track.style.transition = "transform 0.5s ease";
+
+  track.style.transition = "transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)";
   track.style.transform = `translateX(-${cardWidth * index}px)`;
 
   /* RESET LOOP */
@@ -45,10 +46,11 @@ setInterval(() => {
       index = visibleCards;
       track.style.transform = `translateX(-${cardWidth * index}px)`;
 
-      requestAnimationFrame(() =>{
-        track.style.transition = "transform 0.5 ease";
-      });  
-    }, 500);
+      requestAnimationFrame(() => {
+        track.style.transition = "transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)";
+      });
+
+    }, 600); // match duration
   }
 
-}, 3000);
+}, 3500);
