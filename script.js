@@ -19,12 +19,17 @@ cards = document.querySelectorAll(".card");
 
 function updateCarousel() {
   cards.forEach(card => card.classList.remove("active"));
-
   cards[index].classList.add("active");
 
-  const cardWidth = cards[index].offsetWidth + 30;
+  const container = document.querySelector(".carousel");
+  const containerCenter = container.offsetWidth / 2;
 
-  track.style.transform = `translateX(calc(50% - ${cardWidth * index}px))`;
+  const card = cards[index];
+  const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+
+  const move = containerCenter - cardCenter;
+
+  track.style.transform = `translateX(${move}px)`;
 }
 
 /* AUTO SLIDE */
