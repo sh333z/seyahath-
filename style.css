@@ -472,7 +472,64 @@ body{
   font-size: 18px;
   font-weight: 600;
 }
-  
+
+.testimonials {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.test-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+/* Container */
+.test-container {
+  display: flex;
+  justify-content: center;
+  gap: 36px; /* your figma gap */
+}
+
+/* Card */
+.test-card {
+  width: 376px;
+  height: 330px;
+  background: #f5f6fb;
+  border-radius: 0px;
+  padding: 60px 25px 25px;
+  position: relative;
+  text-align: left;
+}
+
+/* Avatar */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  position: absolute;
+  top: -50px; /* half outside */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Text */
+.test-card p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Name */
+.test-card h4 {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
 
 /* Hover Effect */
 .service-card:hover img {
