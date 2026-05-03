@@ -551,7 +551,7 @@ body{
 }
 
 .contact-left p {
-  font-size: 26px; /* figma */
+  font-size: 30px; /* figma */
   margin-bottom: 70px; /* figma gap */
   color: #555;
 }
@@ -575,6 +575,17 @@ body{
   font-size: 28px;
 }
 
+.email {
+  background: #d9ecf1;   /* light blue */
+}
+
+.phone {
+  background: #ddebe7;   /* light green */
+}
+
+.location {
+  background: #d9ecf1;   /* light purple/blue */
+}
 .icon img {
   width: 32px;
   height: 32px;
@@ -583,8 +594,8 @@ body{
 
 /* RIGHT FORM */
 .contact-form {
-  width: 561px;  /* figma */
-  height: 608px; /* figma */
+  width: 500px;  /* figma */
+  height: 600px; /* figma */
   background: #fff;
   padding: 25px; /* figma */
   border-radius: 18px; /* figma */
@@ -602,8 +613,8 @@ body{
 
 /* INPUTS */
 .contact-form input {
-  width: 510px;   /* figma */
-  height: 65px;   /* figma */
+  width: 450px;   /* figma */
+  height: 60px;   /* figma */
   border-radius: 10px;
   border: 1px solid #ddd;
   padding: 0 15px;
@@ -612,7 +623,7 @@ body{
 
 /* TEXTAREA */
 .contact-form textarea {
-  width: 510px;   /* figma */
+  width: 450px;   /* figma */
   height: 164px;  /* figma */
   border-radius: 10px;
   border: 1px solid #ddd;
@@ -623,7 +634,7 @@ body{
 
 /* BUTTON */
 .contact-form button {
-  height: 70px; /* figma */
+  height: 60px; /* figma */
   border-radius: 15px; /* figma */
   font-size: 26px; /* figma */
   border: none;
