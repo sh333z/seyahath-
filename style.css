@@ -575,6 +575,12 @@ body{
   font-size: 28px;
 }
 
+.icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
 /* RIGHT FORM */
 .contact-form {
   width: 561px;  /* figma */
