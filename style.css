@@ -535,7 +535,7 @@ body{
 .contact {
   padding: 100px 8%;
   
-  background: url ("contact-bg.png") no repeat center/cover;
+  background: url ("contact-bg.png") no-repeat center/cover;
   
   position: relative;
 }
@@ -554,7 +554,7 @@ body{
 }
 
 .contact-left p {
-  font-size: 30px; /* figma */
+  font-size: 28px; /* figma */
   margin-bottom: 70px; /* figma gap */
   color: #555;
 }
