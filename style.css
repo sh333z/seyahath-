@@ -534,7 +534,10 @@ body{
 /* SECTION */
 .contact {
   padding: 100px 8%;
-  background: #f8f9fb;
+  
+  background: url ("contact-bg.png") no repeat center/cover;
+  
+  position: relative;
 }
 
 .contact-container {
