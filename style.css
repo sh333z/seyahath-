@@ -544,7 +544,7 @@ body{
 /* LEFT FORM BOX (നിങ്ങൾ ആവശ്യപ്പെട്ടതുപോലെ ഗ്ലാസ്/ഡാർക്ക് ടോൺ ലുക്ക്) */
 .contact-form {
   width: 450px;
-  background: linear-gradient(135deg, #ffffff 0%, #14647E 100%); /* പുതിയ ചിത്രത്തിലെപ്പോലെയുള്ള ഡാർക്ക് ടീൽ കളർ */
+  background: linear-gradient(135deg, #BED4DB 0%, #14647E 100%); /* പുതിയ ചിത്രത്തിലെപ്പോലെയുള്ള ഡാർക്ക് ടീൽ കളർ */
   padding: 40px 30px;
   border-radius: 18px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.1);
@@ -570,39 +570,48 @@ body{
 .contact-form input {
   width: 100%;
   height: 55px;
-  border-radius: 12px;
-  border: none;
+  border-radius: 35px;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
   padding: 0 20px;
   font-size: 15px;
-  background: rgba(255, 255, 255, 0.9);
+  background: transparent;
+  color: white;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8); /* പ്ലേസ്‌ഹോെൽഡർ ടെക്സ്റ്റ് വ്യക്തമായി കാണാൻ */
 }
 
 .contact-form textarea {
   width: 100%;
-  height: 140px;
-  border-radius: 12px;
-  border: none;
-  padding: 15px 20px;
+  height: 130px;
+  border-radius: 20px;
+  border: 1.5px solid rgba(255, 255, 255, 0.6;
+  padding: 15px 25px;
   resize: none;
   font-size: 15px;
-  background: rgba(255, 255, 255, 0.9);
+  background: transparent;
 }
 
 /* SUBMIT BUTTON */
 .contact-form button {
-  height: 50px;
-  border-radius: 12px;
-  font-size: 18px;
+  width: auto;
+  min-width: 130px;
+  padding: 12px 30px;
+  height: 45px;
+  border-radius: 25px;
+  font-size: 15px;
   font-weight: 600;
   border: none;
-  color: #3c6e71;
-  background: white;
+  color: white;
+  background: #89B1BE;
   cursor: pointer;
+  align-self: flex-end;
   transition: 0.3s;
 }
 
 .contact-form button:hover {
-  background: #f0f0f0;
+  opacity: 0.9;
 }
 
 /* RIGHT SIDE: LOCATION & MAP */
