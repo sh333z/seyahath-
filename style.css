@@ -12,7 +12,7 @@ body{
 /* HERO SECTION */
 .hero {
   height: 100vh;
-  background: none;
+  background: linear-gradient(135deg, #0d3b66, #001e3d); 
   position: relative;
   display: flex;
   justify-content: center;
@@ -22,20 +22,17 @@ body{
   overflow: hidden;
 }
 
-/* Overlay + background zoom layer */
+
 .hero::before {
   content: "";
   position: absolute;
-  inset: 0;
-
-  background: 
-    linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.45)),
-    url("plane.PNG") center/cover no-repeat;
-
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url("plane.PNG") right center/contain no-repeat; 
   z-index: 1;
-
-  transform: scale(1);
-  animation: zoomBg 10s ease-in-out infinite alternate;
+  opacity: 0.9;
 }
 
 /* Glass Navbar */
@@ -45,19 +42,20 @@ body{
   left: 50%;
   transform: translateX(-50%);
 
-  width: 778px;      /* exact */
-  height: 61px;      /* exact */
+  width: 778px;      
+  height: 61px;      
   border-radius: 20px;
 
-  padding: 0 40px;   /* 🔥 space inside (text gap from edges) */
+  padding: 0 40px;   
 
-  background: rgba(255,255,255,0.2);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
  
   display: flex;
   align-items: center;
-  justify-content: center; /* center nav items */
+  justify-content: center;
 
   z-index: 10;
 }
@@ -71,7 +69,7 @@ body{
 
 .nav-links a {
   text-decoration: none;
-  color: black;
+  color: white; 
   font-weight: 650;
   font-size: 14px;
   letter-spacing: 1px;
@@ -86,6 +84,7 @@ body{
 .hero-content {
   position: relative;
   z-index: 2;
+  margin-top: 50px;
 }
 
 .welcome {
@@ -126,15 +125,6 @@ body{
 
 .tagline {
   animation-delay: 1.5s;
-}
-
-@keyframes zoomBg {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1); /* zoom level */
-  }
 }
 
 /* Animation keyframes */
