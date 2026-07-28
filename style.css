@@ -544,9 +544,9 @@ body{
 /* LEFT FORM BOX (നിങ്ങൾ ആവശ്യപ്പെട്ടതുപോലെ ഗ്ലാസ്/ഡാർക്ക് ടോൺ ലുക്ക്) */
 .contact-form {
   width: 450px;
-  background: #3c6e71; /* പുതിയ ചിത്രത്തിലെപ്പോലെയുള്ള ഡാർക്ക് ടീൽ കളർ */
+  background: linear-gradient(135deg, #ffffff 0%, #14647E 100%); /* പുതിയ ചിത്രത്തിലെപ്പോലെയുള്ള ഡാർക്ക് ടീൽ കളർ */
   padding: 40px 30px;
-  border-radius: 20px;
+  border-radius: 18px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
