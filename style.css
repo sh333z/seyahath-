@@ -12,7 +12,7 @@ body{
 /* HERO SECTION */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #0d3b66, #001e3d); 
+  background: linear-gradient(135deg, #0d3b66, #001e3d); /* മനോഹരമായ നീല ഗ്രേഡിയന്റ് പശ്ചാത്തലം */
   position: relative;
   display: flex;
   justify-content: center;
@@ -22,17 +22,14 @@ body{
   overflow: hidden;
 }
 
-
+/* ആ ചതുരപ്പെട്ടി ഒഴിവാക്കി വിമാനം മാത്രം സ്ക്രീനിൽ ഫിറ്റ് ചെയ്യാൻ */
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background: url("plane.PNG") right center/contain no-repeat; 
+  inset: 0;
+  background: url("plane.PNG") right center/cover no-repeat; /* ചിത്രം മുഴുവനായി സ്ക്രീനിൽ വരുന്ന രീതി */
   z-index: 1;
-  opacity: 0.9;
+  opacity: 0.85; /* ടെക്സ്റ്റ് വ്യക്തമായി കാണാൻ ചെറിയ സുതാര്യത */
 }
 
 /* Glass Navbar */
@@ -48,10 +45,9 @@ body{
 
   padding: 0 40px;   
 
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
  
   display: flex;
   align-items: center;
@@ -69,7 +65,7 @@ body{
 
 .nav-links a {
   text-decoration: none;
-  color: white; 
+  color: black; /* നിങ്ങൾ ആദ്യം നൽകിയ കറുപ്പ് നിറം തന്നെ നിലനിർത്തിയിരിക്കുന്നു */
   font-weight: 650;
   font-size: 14px;
   letter-spacing: 1px;
@@ -84,7 +80,6 @@ body{
 .hero-content {
   position: relative;
   z-index: 2;
-  margin-top: 50px;
 }
 
 .welcome {
