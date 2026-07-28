@@ -582,22 +582,22 @@ body{
   color: rgba(255, 255, 255, 0.8); /* പ്ലേസ്‌ഹോെൽഡർ ടെക്സ്റ്റ് വ്യക്തമായി കാണാൻ */
 }
 
+/* TEXTAREA - അകത്തെ വെള്ള ഫിൽ പൂർണ്ണമായി ഒഴിവാക്കാൻ */
 .contact-form textarea {
   width: 100%;
-  height: 130px;
+  height: 120px;
   border-radius: 20px;
-  border: 1.5px solid rgba(255, 255, 255, 0.6;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
   padding: 15px 25px;
   resize: none;
   font-size: 15px;
-  background: transparent;
+  background: transparent !important; /* വെള്ള ഫിൽ വരുന്നത് തടയാൻ */
+  color: white;
 }
 
-/* SUBMIT BUTTON */
+/* SUBMIT BUTTON - ചെറിയ ബട്ടൺ ആയി വലതുവശത്ത് നിൽക്കാൻ */
 .contact-form button {
-  width: auto;
-  min-width: 130px;
-  padding: 12px 30px;
+  width: 130px !important; /* മുഴുവൻ നീളം വരാതിരിക്കാൻ */
   height: 45px;
   border-radius: 25px;
   font-size: 15px;
@@ -606,13 +606,18 @@ body{
   color: white;
   background: #89B1BE;
   cursor: pointer;
-  align-self: flex-end;
-  transition: 0.3s;
+  align-self: flex-end; /* വലതുവശത്തേക്ക് വെക്കാൻ */
+  margin-top: 5px;
 }
 
-.contact-form button:hover {
-  opacity: 0.9;
+/* വലതുവശത്തെ കോൺടാക്റ്റ് വിവരങ്ങൾ താഴെ താഴെ വരാൻ */
+.contact-text-group span {
+  font-size: 14px;
+  color: #555;
+  display: block; /* ഓരോ വരിയായി താഴേക്ക് വരാൻ */
+  margin-top: 2px;
 }
+
 
 /* RIGHT SIDE: LOCATION & MAP */
 .contact-right {
