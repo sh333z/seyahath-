@@ -32,48 +32,53 @@ body{
   opacity: 0.85; 
 }
 
-/* Glass Navbar */
+/* Glass Navbar Container */
 .nav-container {
   position: absolute;
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
-
-  width: 778px;      
-  height: 61px;      
-  border-radius: 20px;
-
-  padding: 0 40px;   
-
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
- 
+  background: transparent; /* പുറത്തുള്ള പ്രധാന ബോക്സിന് ബാക്ക്ഗ്രൗണ്ട് ഒഴിവാക്കുന്നു */
   display: flex;
   align-items: center;
   justify-content: center;
-
   z-index: 10;
 }
 
-/* Nav links */
+/* Nav links styling */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 145px;
+  gap: 15px; /* ഓരോ ബട്ടണുകൾക്കും ഇടയിലുള്ള ചെറിയ ഗ്യാപ് */
 }
 
-.nav-links a {
+/* ഓരോ മെനു ഐറ്റവും தனிത്തനി ബട്ടണുകളാക്കാൻ */
+.nav-links li a {
   text-decoration: none;
-  color: black; /* നിങ്ങൾ ആദ്യം നൽകിയ കറുപ്പ് നിറം തന്നെ നിലനിർത്തിയിരിക്കുന്നു */
-  font-weight: 650;
+  color: white;
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
-  transition: 0.3s;
+  padding: 12px 30px; /* ബട്ടണിന്റെ അകത്തെ വലിപ്പം */
+  border-radius: 30px; /* വശങ്ങൾ വളഞ്ഞ പിൽ ആകൃതി കിട്ടാൻ */
+  background: rgba(255, 255, 255, 0.15); /* അർദ്ധസുതാര്യമായ ഗ്ലാസ് എഫക്റ്റ് */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s ease;
+  display: inline-block;
 }
 
-.nav-links a:hover {
+/* ഹോവർ ചെയ്യുമ്പോൾ */
+.nav-links li a:hover {
+  background: rgba(255, 255, 255, 0.3);
   color: #00e676;
+}
+
+/* ആക്റ്റീവ് ആയ അല്ലെങ്കിൽ ഹോം ബട്ടൺ വെളുത്ത നിറത്തിൽ ഹൈലൈറ്റ് ചെയ്യാൻ (HTML-ൽ class="active" ചേർക്കുക) */
+.nav-links li a.active {
+  background: white;
+  color: black;
 }
 
 /* Hero Text */
