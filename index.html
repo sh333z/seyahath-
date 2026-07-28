@@ -246,54 +246,42 @@
  <section class="contact">
   <div class="contact-container">
 
-    <!-- LEFT SIDE -->
-    <div class="contact-left">
-      <h2>Get in touch</h2>
-      <p>We are here to assist you anytime !</p>
-
-      <!-- Email -->
-      <div class="contact-item">
-        <div class="icon email">
-          <img src="mail.png" alt="">
-        </div>
-        <div>
-          <h4>Email us</h4>
-          <span>seyahatholidays@gmail.com</span>
-        </div>
-      </div>
-
-      <!-- Phone -->
-      <div class="contact-item">
-        <div class="icon phone">
-          <img src="phone.png" alt="">
-        </div>
-        <div>
-          <h4>Call us</h4>
-          <span>860 655 0235 , 871 420 0235</span>
-        </div>
-      </div>
-
-      <!-- Location -->
-      <div class="contact-item">
-        <div class="icon location">
-          <img src="location.png" alt="">
-        </div>
-        <div>
-          <h4>Our location</h4>
-          <span>Royal Oak Mall Thana, Kannur</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- RIGHT FORM -->
+    <!-- LEFT SIDE: FORM (പുതിയ ഡിസൈൻ പ്രകാരം ഇടതുവശത്തേക്ക് മാറ്റിയിരിക്കുന്നു) -->
     <div class="contact-form">
-      <h3>We’re Here For You</h3>
+      <h3>Get in touch</h3>
+      <p class="form-subtitle">We’re Here For You</p>
 
       <input type="text" placeholder="Name">
       <input type="email" placeholder="Email">
       <textarea placeholder="Message"></textarea>
 
-      <button>✈️ Send Message</button>
+      <button>Submit</button>
+    </div>
+
+    <!-- RIGHT SIDE: LOCATION & DETAILS (മാപ്പും കോൺടാക്റ്റ് വിവരങ്ങളും വലതുവശത്ത്) -->
+    <div class="contact-right">
+      <h3 class="location-title">Our Location</h3>
+      
+      <!-- മാപ്പ് ചേർക്കാനുള്ള ഭാഗം (Google Map iframe അല്ലെങ്കിൽ ചിത്രം) -->
+      <div class="map-box">
+        <img src="map-placeholder.png" alt="Map Location"> <!-- നിങ്ങളുടെ മാപ്പ് ചിത്രം ഇവിടെ നൽകാം -->
+      </div>
+
+      <!-- താഴെയുള്ള കോൺടാക്റ്റ് ഐക്കണുകളും വിവരങ്ങളും -->
+      <div class="contact-details-row">
+        <div class="icon email">
+          <img src="mail.png" alt="">
+        </div>
+        <div class="icon phone">
+          <img src="phone.png" alt="">
+        </div>
+        <div class="contact-text-group">
+          <h4>Our location</h4>
+          <span>Royal Oak Mall Thana, Kannur</span>
+          <span class="phone-num">860 655 0235 , 871 420 0235</span>
+        </div>
+      </div>
+
     </div>
 
   </div>
