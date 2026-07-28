@@ -49,21 +49,21 @@ body{
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px; /* ഓരോ ബട്ടണുകൾക്കും ഇടയിലുള്ള ചെറിയ ഗ്യാപ് */
+  gap: 8px; /* ഓരോ ബട്ടണുകൾക്കും ഇടയിലുള്ള ചെറിയ ഗ്യാപ് */
 }
 
 /* ഓരോ മെനു ഐറ്റവും தனிത്തനി ബട്ടണുകളാക്കാൻ */
 .nav-links li a {
   text-decoration: none;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
-  padding: 12px 30px; /* ബട്ടണിന്റെ അകത്തെ വലിപ്പം */
+  padding: 10px 40px; /* ബട്ടണിന്റെ അകത്തെ വലിപ്പം */
   border-radius: 30px; /* വശങ്ങൾ വളഞ്ഞ പിൽ ആകൃതി കിട്ടാൻ */
-  background: rgba(255, 255, 255, 0.15); /* അർദ്ധസുതാര്യമായ ഗ്ലാസ് എഫക്റ്റ് */
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.08); /* അർദ്ധസുതാര്യമായ ഗ്ലാസ് എഫക്റ്റ് */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: 0.3s ease;
   display: inline-block;
