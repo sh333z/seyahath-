@@ -12,7 +12,7 @@ body{
 /* HERO SECTION */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #0d3b66, #001e3d); /* മനോഹരമായ നീല ഗ്രേഡിയന്റ് പശ്ചാത്തലം */
+  background: linear-gradient(135deg, #0d3b66, #001e3d); 
   position: relative;
   display: flex;
   justify-content: center;
@@ -22,14 +22,14 @@ body{
   overflow: hidden;
 }
 
-/* ആ ചതുരപ്പെട്ടി ഒഴിവാക്കി വിമാനം മാത്രം സ്ക്രീനിൽ ഫിറ്റ് ചെയ്യാൻ */
+
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("plane.PNG") right center/cover no-repeat; /* ചിത്രം മുഴുവനായി സ്ക്രീനിൽ വരുന്ന രീതി */
+  background: url("plane.PNG") right center/cover no-repeat; 
   z-index: 1;
-  opacity: 0.85; /* ടെക്സ്റ്റ് വ്യക്തമായി കാണാൻ ചെറിയ സുതാര്യത */
+  opacity: 0.85; 
 }
 
 /* Glass Navbar */
@@ -80,6 +80,10 @@ body{
 .hero-content {
   position: relative;
   z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 80px; 
+  text-align: left;    
 }
 
 .welcome {
