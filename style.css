@@ -228,13 +228,18 @@ body{
   border-radius: 15px; /* keep or adjust from figma */
   
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 12px;
+  padding: 20px;
 
   font-size: 18px;
   font-weight: 600;
+  transition: 0.3s;
 }
+
 
 .why-card:hover {
   transform: translateY(-5px);
@@ -242,19 +247,19 @@ body{
 
 /* Different colors for each box */
 .why-card:nth-child(1) {
-  background: #eaf3ec; /* light green */
+  background: #DDEBD7; /* light green */
 }
 
 .why-card:nth-child(2) {
-  background: #eef9ff; /* light blue */
+  background: #D9ECF1; /* light blue */
 }
 
 .why-card:nth-child(3) {
-  background: #edf3f5; /* light gray-blue */
+  background: #D9ECF1; /* light gray-blue */
 }
 
 .why-card:nth-child(4) {
-  background: #eaf3ec; /* same as first */
+  background: #DDEBD7; /* same as first */
 }
 
 /* RIGHT SIDE */
